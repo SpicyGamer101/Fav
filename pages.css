@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: black;
+}
+
+.heading {
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    width: 90%;
+    margin-top: -50vh;
+    z-index: 1;
+}
+
+.logo {
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    z-index: 2;
+}
+
+h3 {
+    font-size: 7vmin;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+h4 {
+    font-size: 4vmin;
+    margin-bottom: 5vh;
+}
+
+.left {
+    display: inline-block;
+    width: 48.5%;
+    height: 40vh;
+    text-align: center;
+    overflow: hidden;
+    color: black;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    margin-left: 0.9vw;
+    margin-right: 1vw;
+}
+
+.right {
+    display: inline-block;
+    width: 48.5%;
+    height: 40vh;
+    text-align: center;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    margin-right: 1vw;
+}
+
+#oneText {
+    background-color: rgb(113, 189, 240);
+    border-radius: 5vw;
+    animation: gradient 10s linear infinite;
+}
+
+#twoText {
+    background-color: rgb(255, 114, 121);
+    border-radius: 5vw;
+    animation: gradient 10s linear infinite;
+    animation-direction: reverse;
+}
+
+#threeText {
+    background-color: rgb(122, 255, 117);
+    border-radius: 5vw;
+    animation: gradient 10s linear infinite;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5vw;
+}
+
+.back {
+    --back-bg-color: crimson;
+    background-color: var(--back-bg-color);
+    border-radius: 30vmin;
+    height: 30vmin;
+    width: 30vmin;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+    text-align: center;
+    line-height: 30vmin;
+    overflow: hidden;
+}
+
+a {
+    font-size: 10vmin;
+    padding-top: 100%;
+    padding-bottom: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: black;
+    text-decoration: none;
+}
+
+.fullBackground {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+    border-radius: 0;
+}
+
+.background1 {
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+}
+
+.logo1 {
+    width: 50vw;
+    margin-top: -5vh;
+}
+
+a:hover {
+    color: rgb(250, 250, 250);
+    animation: rotate 1s;
+}
+
+.back:hover {
+    color: rgb(250, 250, 250);
+    --back-bg-color: #dc1467;
+    animation: rotate 1s;
+}
+
+@keyframes gradient {
+    0% {
+        background-color: rgb(255, 0, 0);
+      }
+    17% {
+        background-color: rgb(255, 255, 0);
+    }
+    32% {
+        background-color: rgb(0, 255, 0);
+    }
+    49% {
+        background-color: rgb(0, 255, 255);
+    }
+    66% {
+        background-color: rgb(0, 0, 255);
+    }
+    83% {
+        background-color: rgb(255, 0, 255);
+    }
+    100% {
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
